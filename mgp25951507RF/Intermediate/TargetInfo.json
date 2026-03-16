@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "mgp25951507RF",
+			"Path": "..\\Source\\mgp25951507RF.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "mgp25951507RFEditor",
+			"Path": "..\\Source\\mgp25951507RFEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
