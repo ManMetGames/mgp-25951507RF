@@ -1,0 +1,23 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/Lighting/BP_Spotlight.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/W9/ZAAGYIUQZ2W6WEO3HPXAX7.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/8I/HFL05AWIVBP8M8UXTV4H5K.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/8/7A/C0UVMH95QVQO1KMTVK7MSB.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/8U/VKFLMM0CV8ZCC0P3TQGTTM.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/B/6W/SLKL8RWNKCIZC6CJ3I36DL.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/9/I3/2F5LKF2EAQA5ILN5N268LO.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/C/PH/XX2X7GDVSE24P3424CWEGB.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/7/B2/XUEOYLHN02NKYFMDFFG1C2.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/4/4G/XVAAA3QU5EAGABUDAH9SKZ.uasset",
+				"C:/Users/oldjo/Desktop/Mechanics Gameplay/mgp-25951507RF/mgp25951507RF/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/6/GG/T8HC8OU85QNM9JLJOO08JE.uasset"
+			]
+		}
+	]
+}
