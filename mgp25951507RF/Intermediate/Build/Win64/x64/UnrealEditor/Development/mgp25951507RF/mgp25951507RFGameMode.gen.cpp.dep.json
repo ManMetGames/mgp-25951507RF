@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\oldjo\\desktop\\mechanics gameplay\\mgp-25951507rf\\mgp25951507rf\\intermediate\\build\\win64\\unrealeditor\\inc\\mgp25951507rf\\uht\\mgp25951507rfgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\oldjo\\desktop\\mechanics gameplay\\mgp-25951507rf\\mgp25951507rf\\intermediate\\build\\win64\\x64\\mgp25951507rfeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\oldjo\\desktop\\mechanics gameplay\\mgp-25951507rf\\mgp25951507rf\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mgp25951507rf\\definitions.mgp25951507rf.h",
+            "c:\\users\\oldjo\\desktop\\mechanics gameplay\\mgp-25951507rf\\mgp25951507rf\\source\\mgp25951507rf\\mgp25951507rfgamemode.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\oldjo\\desktop\\mechanics gameplay\\mgp-25951507rf\\mgp25951507rf\\intermediate\\build\\win64\\unrealeditor\\inc\\mgp25951507rf\\uht\\mgp25951507rfgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
