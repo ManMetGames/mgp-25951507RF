@@ -367,10 +367,20 @@ void ACombatCharacter::HandleDeath()
 	GetWorld()->GetTimerManager().SetTimer(RespawnTimer, this, &ACombatCharacter::RespawnCharacter, RespawnTime, false);
 }
 
-void ACombatCharacter::ApplyHealing(float Healing, AActor* Healer)
+/* FIXME
+void ACombatCharacter::ApplyHealing(float HealingAmount, AActor*)
 {
-	// stub
+	// stub EDITME
+	if (CurrentHP > 0.0f)
+		{
+		// increase HP but clamp to max
+		CurrentHP = FMath::Min(CurrentHP + Healing, MaxHP);
+		// update the life bar
+		LifeBarWidget->SetLifePercentage(CurrentHP / MaxHP);
+	}
+
 }
+*/
 
 void ACombatCharacter::RespawnCharacter()
 {

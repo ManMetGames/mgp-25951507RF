@@ -45,7 +45,7 @@ protected:
 
 	/** Max amount of HP the character will have on respawn */
 	UPROPERTY(EditAnywhere, Category="Damage")
-	float MaxHP = 3.0f;
+	float MaxHP = 10.0f;
 
 public:
 

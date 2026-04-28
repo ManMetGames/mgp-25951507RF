@@ -70,12 +70,16 @@ protected:
 	UInputAction* ChargedAttackAction;
 
 	/** Max amount of HP the character will have on respawn */
-	UPROPERTY(EditAnywhere, Category="Damage", meta = (ClampMin = 0, ClampMax = 100))
-	float MaxHP = 5.0f;
+	UPROPERTY(EditAnywhere, Category="Damage", meta = (ClampMin = 0, ClampMax = 1))
+	float MaxHP = 100.0f;
 
 	/** Current amount of HP the character has */
 	UPROPERTY(VisibleAnywhere, Category="Damage")
 	float CurrentHP = 0.0f;
+
+	/** Current amount of HP the character has */
+	UPROPERTY(VisibleAnywhere, Category = "Healing")
+	float Healing = 10.0f;
 
 	/** Life bar widget fill color */
 	UPROPERTY(EditAnywhere, Category="Damage")
@@ -109,7 +113,7 @@ protected:
 
 	/** Amount of damage a melee attack will deal */
 	UPROPERTY(EditAnywhere, Category="Melee Attack|Damage", meta = (ClampMin = 0, ClampMax = 100))
-	float MeleeDamage = 1.0f;
+	float MeleeDamage = 2.0f;
 
 	/** Amount of knockback impulse a melee attack will apply */
 	UPROPERTY(EditAnywhere, Category="Melee Attack|Damage", meta = (ClampMin = 0, ClampMax = 1000, Units = "cm/s"))
