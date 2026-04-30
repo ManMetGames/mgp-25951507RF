@@ -78,8 +78,8 @@ protected:
 	float CurrentHP = 0.0f;
 
 	/** Current amount of HP the character has */
-	UPROPERTY(VisibleAnywhere, Category = "Healing")
-	float Healing = 10.0f;
+	/*UPROPERTY(VisibleAnywhere, Category = "Healing")
+	float Healing = 10.0f;*/
 
 	/** Life bar widget fill color */
 	UPROPERTY(EditAnywhere, Category="Damage")
@@ -281,13 +281,13 @@ public:
 
 protected:
 
-	/** Blueprint handler to play damage dealt effects */
-	UFUNCTION(BlueprintImplementableEvent, Category="Combat")
-	void DealtDamage(float Damage, const FVector& ImpactPoint);
+	///** Blueprint handler to play damage dealt effects */
+	//UFUNCTION(BlueprintImplementableEvent, Category="Combat")
+	//void DealtDamage(float Damage, const FVector& ImpactPoint);
 
-	/** Blueprint handler to play damage received effects */
-	UFUNCTION(BlueprintImplementableEvent, Category="Combat")
-	void ReceivedDamage(float Damage, const FVector& ImpactPoint, const FVector& DamageDirection);
+	///** Blueprint handler to play damage received effects */
+	//UFUNCTION(BlueprintImplementableEvent, Category="Combat")
+	//void ReceivedDamage(float Damage, const FVector& ImpactPoint, const FVector& DamageDirection);
 
 protected:
 

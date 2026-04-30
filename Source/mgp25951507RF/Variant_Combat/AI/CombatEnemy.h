@@ -203,9 +203,9 @@ public:
 
 protected:
 
-	/** Blueprint handler to play damage received effects */
-	UFUNCTION(BlueprintImplementableEvent, Category="Combat")
-	void ReceivedDamage(float Damage, const FVector& ImpactPoint, const FVector& DamageDirection);
+	///** Blueprint handler to play damage received effects */
+	//UFUNCTION(BlueprintImplementableEvent, Category="Combat")
+	//void ReceivedDamage(float Damage, const FVector& ImpactPoint, const FVector& DamageDirection);
 
 protected:
 

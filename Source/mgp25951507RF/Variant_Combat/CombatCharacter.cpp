@@ -486,3 +486,4 @@ void ACombatCharacter::NotifyControllerChanged()
 	}
 }
 
+
