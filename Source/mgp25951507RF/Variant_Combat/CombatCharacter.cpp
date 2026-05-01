@@ -370,9 +370,25 @@ void ACombatCharacter::HandleDeath()
 }
 
 
-void ACombatCharacter::ApplyHealing(float HealingAmount, AActor*)
+void ACombatCharacter::ApplyHealing(float Healing, AActor* Healer)
 {
-	// stub EDITME
+	// silence unused param warning if healer isn't used
+	(void)Healer;
+
+	// Ignore healing if character is dead
+	if (CurrentHP <= 0.0f)
+	{
+		return;
+	}
+
+	// increase the current HP, clamping to the maximum.
+	CurrentHP = FMath::Clamp(CurrentHP + Healing, 0.0f, MaxHP);
+
+	// update the life bar if valid.
+	if (LifeBarWidget)
+	{
+		LifeBarWidget->SetLifePercentage(CurrentHP / MaxHP);
+	}
 }
 
 

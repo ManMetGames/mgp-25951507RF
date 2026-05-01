@@ -77,9 +77,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category="Damage")
 	float CurrentHP = 0.0f;
 
-	/** Current amount of HP the character has */
-	/*UPROPERTY(VisibleAnywhere, Category = "Healing")
-	float Healing = 10.0f;*/
+	/** Current amount of Healing the Healing Function does */
+	UPROPERTY(VisibleAnywhere, Category = "Healing")
+	float HealingAmount = 10.0f;
 
 	/** Life bar widget fill color */
 	UPROPERTY(EditAnywhere, Category="Damage")

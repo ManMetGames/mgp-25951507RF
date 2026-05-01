@@ -25,7 +25,7 @@ protected:
 
 	/** Amount of damage to deal on contact */
 	UPROPERTY(EditAnywhere, Category="Damage")
-	float Damage = 1.0f;
+	float Damage = 10.0f;
 
 public:	
 
