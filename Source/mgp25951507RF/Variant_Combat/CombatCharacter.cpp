@@ -279,7 +279,8 @@ void ACombatCharacter::DoAttackTrace(FName DamageSourceBone)
 				Damageable->ApplyDamage(MeleeDamage, this, CurrentHit.ImpactPoint, Impulse);
 
 				// call the BP handler to play effects, etc.
-				DealtDamage(MeleeDamage, CurrentHit.ImpactPoint);
+				UE_LOG(LogTemp, Warning, TEXT("Implement me please."));
+				//DealtDamage(MeleeDamage, CurrentHit.ImpactPoint);
 			}
 		}
 	}
@@ -344,7 +345,8 @@ void ACombatCharacter::ApplyDamage(float Damage, AActor* DamageCauser, const FVe
 		}
 
 		// pass control to BP to play effects, etc.
-		ReceivedDamage(ActualDamage, DamageLocation, DamageImpulse.GetSafeNormal());
+		UE_LOG(LogTemp, Warning, TEXT("Implement me please."));
+		//ReceivedDamage(ActualDamage, DamageLocation, DamageImpulse.GetSafeNormal());
 	}
 
 }

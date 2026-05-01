@@ -215,7 +215,8 @@ void ACombatEnemy::ApplyDamage(float Damage, AActor* DamageCauser, const FVector
 		}
 
 		// pass control to BP to play effects, etc.
-		ReceivedDamage(ActualDamage, DamageLocation, DamageImpulse.GetSafeNormal());
+		UE_LOG(LogTemp, Warning, TEXT("Implement me please."));
+		//ReceivedDamage(ActualDamage, DamageLocation, DamageImpulse.GetSafeNormal());
 	}
 }
 
