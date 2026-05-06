@@ -387,6 +387,12 @@ void ACombatCharacter::ApplyHealing(float Healing, AActor* Healer)
 	// increase the current HP, clamping to the maximum.
 	CurrentHP = FMath::Clamp(CurrentHP + Healing, 0.0f, MaxHP);
 
+	if(CurrentHP >= MaxHP)
+	{
+		GetMesh()->SetBodySimulatePhysics(PelvisBoneName, true);
+		GetMesh()->SetPhysicsBlendWeight(0.0f);
+	}
+
 	// update the life bar if valid.
 	if (LifeBarWidget)
 	{
@@ -479,6 +485,7 @@ void ACombatCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
 void ACombatCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
 
 	// only regenerate health if the character is alive
 	if (CurrentHP > 0.0f && CurrentHP < MaxHP)
@@ -491,6 +498,8 @@ void ACombatCharacter::Tick(float DeltaTime)
 		{
 			// regenerate health based on the regen rate
 			ApplyHealing(HealthRegenRate * DeltaTime, this);
+
+			
 		}
 	}
 }
