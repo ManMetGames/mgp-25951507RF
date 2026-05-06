@@ -81,6 +81,17 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = "Healing")
 	float HealingAmount = 10.0f;
 
+	/** Time to wait after taking damage before health regeneration starts */
+	UPROPERTY(EditAnywhere, Category="Health Regeneration", meta = (ClampMin = 0, ClampMax = 30, Units = "s"))
+	float HealthRegenDelay = 5.0f;
+
+	/** Amount of health to regenerate per second */
+	UPROPERTY(EditAnywhere, Category="Health Regeneration", meta = (ClampMin = 0, ClampMax = 100))
+	float HealthRegenRate = 5.0f;
+
+	/** Time elapsed since the last time the character took damage */
+	float TimeSinceLastDamage = 0.0f;
+
 	/** Life bar widget fill color */
 	UPROPERTY(EditAnywhere, Category="Damage")
 	FLinearColor LifeBarColor;
@@ -296,6 +307,9 @@ protected:
 
 	/** Cleanup */
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
+
+	/** Called every frame to handle health regeneration */
+	virtual void Tick(float DeltaTime) override;
 
 	/** Handles input bindings */
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;

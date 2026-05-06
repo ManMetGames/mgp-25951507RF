@@ -169,6 +169,9 @@ void ACombatCharacter::ResetHP()
 	// reset the current HP total
 	CurrentHP = MaxHP;
 
+	// reset the damage timer so regen doesn't start immediately
+	TimeSinceLastDamage = 0.0f;
+
 	// update the life bar
 	LifeBarWidget->SetLifePercentage(1.0f);
 }
@@ -406,6 +409,9 @@ float ACombatCharacter::TakeDamage(float Damage, struct FDamageEvent const& Dama
 		return 0.0f;
 	}
 
+	// reset the damage timer so health regen will start after the delay again
+	TimeSinceLastDamage = 0.0f;
+
 	// reduce the current HP
 	CurrentHP -= Damage;
 
@@ -470,6 +476,25 @@ void ACombatCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
 	GetWorld()->GetTimerManager().ClearTimer(RespawnTimer);
 }
 
+void ACombatCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	// only regenerate health if the character is alive
+	if (CurrentHP > 0.0f && CurrentHP < MaxHP)
+	{
+		// increment the time since last damage
+		TimeSinceLastDamage += DeltaTime;
+
+		// check if we should start regenerating health
+		if (TimeSinceLastDamage >= HealthRegenDelay)
+		{
+			// regenerate health based on the regen rate
+			ApplyHealing(HealthRegenRate * DeltaTime, this);
+		}
+	}
+}
+
 void ACombatCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -503,5 +528,4 @@ void ACombatCharacter::NotifyControllerChanged()
 		PC->SetRespawnTransform(GetActorTransform());
 	}
 }
-
 
